@@ -1,0 +1,10 @@
+{
+    "name": "MemeMachine",
+    "description": "Meme extension to help you get through the day",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.py"
+      },
+      "permissions": ["storage"]
+  }
