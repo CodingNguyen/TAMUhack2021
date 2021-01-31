@@ -10,7 +10,7 @@ function random_image(image)
 return image[Math.floor(Math.random()*image.length)];
      
 }
-var ChosenImg = random_image(image)
+var ChosenImg = random_image(images)
 
 console.log(random_image(images));
 console.log(ChosenImg);
