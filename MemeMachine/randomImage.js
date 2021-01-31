@@ -11,8 +11,8 @@ return image[Math.floor(Math.random()*image.length)];
      
 }
 var ChosenImg = random_image(images)
-const image = document.getElementById("image");
-image.src = ChosenImg;
+    const image = document.getElementById("image");
+    image.src = ChosenImg;
 // checking output
 console.log(random_image(images));
 console.log(ChosenImg);
