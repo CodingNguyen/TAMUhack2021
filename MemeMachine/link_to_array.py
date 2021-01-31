@@ -20,10 +20,10 @@ with open(f'{os.getcwd()}\\TAMUhack2021\\MemeMachine\\urls.csv') as csv_file:
         try:
             if url[-4] == '.':
                 img = Image.open(requests.get(url, stream = True).raw)
-                img.save(f"{os.getcwd()}\\TAMUhack2021\\MemeMachine\\{images_folder}\{line_count}_Img{url[-4:]}")
+                img.save(f"{os.getcwd()}\\TAMUhack2021\\MemeMachine\\{images_folder}\{line_count}_Img.jpg")
             else:
                 img = Image.open(requests.get(url, stream = True).raw)
-                img.save(f"{os.getcwd()}\\TAMUhack2021\\MemeMachine\\{images_folder}\{line_count}_Img{url[-5:]}")
+                img.save(f"{os.getcwd()}\\TAMUhack2021\\MemeMachine\\{images_folder}\{line_count}_Img.jpg")
         except:
             pass
         line_count += 1
