@@ -11,7 +11,7 @@ print(os.getcwd())
 
 with open(f'{os.getcwd()}\\TAMUhack2021\\MemeMachine\\urls.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
-    line_count = 31
+    line_count = 0
     
     for url in csv_reader:
         url = url[0]
