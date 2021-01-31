@@ -1,10 +1,8 @@
 // randomize Meme displayed on webpage
 
-window.onload = choosePic;
 
-var myPic = new Array();
-
-function choosePic() {
-     var randomNum = Math.floor(Math.random() * myPic.length);
-     document.getElementById("chosenPic").src = myPic[randomNum]
+function getRandomImage(){
+    var randomNumber = Math.floor(Math.random() * 10) + 5;
+    var imageName = "img_" + randomNumber;
+    document.getElementById("imageid").src= "ImagePath" + "/" + imageName
 }
