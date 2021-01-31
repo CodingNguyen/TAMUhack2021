@@ -3,11 +3,6 @@ import imutils
 import cv2
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
-def add_text(imagename, text):
-    image = Image.open(imagename)
-    
-    image.show()    
-
 def deep_fry(imagename, top, bottom):
     image = Image.open(imagename)
 
@@ -35,4 +30,4 @@ def deep_fry(imagename, top, bottom):
     im3 = ImageEnhance.Color(image)
     im3.enhance(40.0).show()
 
-deep_fry("Images2/24_Img.jpg", "TOP TEXT", "BOTTOM TEXT")
+deep_fry("MemeMachine/Images/The Rock Driving Meme.jpg", "TOP TEXT", "BOTTOM TEXT")
