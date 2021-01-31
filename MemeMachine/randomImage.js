@@ -12,7 +12,7 @@ return image[Math.floor(Math.random()*image.length)];
 
 function main(){
     var ChosenImg = random_image(images)
-    document.getElementById("imageID").src = "Images2/" + ChosenImg;
+    document.getElementById("imageID").src = "Images/" + ChosenImg;
     
     // checking output
     // console.log(src);
