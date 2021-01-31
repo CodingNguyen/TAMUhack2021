@@ -1,6 +1,6 @@
 import os
 
-meme_folder = 'Images2'
+meme_folder = 'Images'
 path = f'{os.getcwd()}\TAMUhack2021\{meme_folder}'
 
 files = os.listdir(path)
