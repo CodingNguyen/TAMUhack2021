@@ -1,12 +1,16 @@
 
 
 
-var images = ['0_Img', '1_Img', '2_Img', '3_Img', '4_Img', '5_Img', '6_Img', '7_Img', '8_Img', '9_Img', '10_Img', '11_Img', '12_Img', '13_Img', '14_Img', '15_Img', '16_Img', '17_Img', '18_Img', '19_Img', '20_Img', '21_Img', '22_Img', '23_Img', '24_Img', '25_Img', '26_Img', '27_Img', '28_Img'];
+var images = ['0_Img.jpg', '1_Img.jpg', '2_Img.jpg', '3_Img.jpg', '4_Img.jpg', '5_Img.jpg', '6_Img.jpg', '7_Img.jpg', '8_Img.jpg', '9_Img.jpg', '10_Img.jpg', '11_Img.jpg', '12_Img.jpg', '13_Img.jpg', '14_Img.jpg', '15_Img.jpg', '16_Img.jpg', 
+'17_Img.jpg', '18_Img.jpg', '19_Img.jpg', '20_Img.jpg', '21_Img.jpg', '22_Img.jpg', '23_Img.jpg', '24_Img.jpg', '25_Img.jpg', '26_Img.jpg', '27_Img.jpg', '28_Img.jpg']
+
 function random_image(image)
 {
   
 return image[Math.floor(Math.random()*image.length)];
      
 }
+var ChosenImg = random_image(image)
 
 console.log(random_image(images));
+console.log(ChosenImg);
