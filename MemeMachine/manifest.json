@@ -2,9 +2,18 @@
     "name": "MemeMachine",
     "description": "Meme extension to help you get through the day",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
+   
+    "chrome_url_overrides": {
+        "newtab": "MemePage.html"
+    },
+    "browser_action": {
+        "default_icon": "rocket16.png",
+        "default_title": "Click to see Memes!"
+    },
+    "permissions":["tabs", "activeTab"],
+
     "background": {
-        "service_worker": "background.py"
-      },
-      "permissions": ["storage"]
-  }
+        "scripts": ["background.js"]
+    }
+}
