@@ -2,13 +2,24 @@
 
 <html>
 <head>
+     <title>MemeMachine</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script type="text/javascript" src = randomImage.js> </script>
 <style>
+     body, html {
+     height: 100%;
+     line-height: 1.8;
+     }
+     .w3-bar .w3-button {
+     padding: 16px;
+     }
      body {
+          font-family: 'Courier New', Courier, monospace;
           background: rgb(63,143,251);
-          background: radial-gradient(circle, rgba(63,143,251,1) 0%, rgba(252,70,107,1) 100%);
-          padding: 0; 
-          margin: 0;
-          
+          background: radial-gradient(circle, rgba(63,143,251,1) 0%, rgba(252,70,107,1) 100%);          
      }
      img {
           max-width: 100%;
@@ -21,45 +32,64 @@
      
      p {
           text-align: center;
-          font-family: Courier New;
-          font-size: 35px;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 25px;
           color: white;
-          padding: 20px;
+          padding: 15px;
           background-color: #232323;
           margin-top: auto;
           margin-bottom: 50px;     
      }
-
-     #top {
-          padding: 0px;
-          box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-          -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-          -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-     }
-
-     .bottom {
-          height:100vh;
-     }
+     .wide {letter-spacing: 10px;}
+     .hover-opacity {cursor: pointer;}
 </style>
-     <title>MemeMachine</title>
-     <script type="text/javascript" src = randomImage.js> </script>
-     <link rel="stylesheet" href="randomImage.css">
+     
 </head>
 
 <body>
-     <div id="top">
-          <p>Howdy! It's nice to <i>meme</i> you! We hope you enjoy!</p>
+     <!-- Navbar -->
+     <div class="w3-top">
+          <div class="w3-card" id="myNavbar">
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+              <a href="#about" class="w3-bar-item w3-button w3-text-white">ABOUT</a>
+              <a href="#team" class="w3-bar-item w3-button w3-text-white"><i class="fa fa-user w3-text-white"></i> TEAM</a>
+              <a href="#contact" class="w3-bar-item w3-button w3-text-white"><i class="fa fa-envelope w3-text-white"></i> CONTACT</a>
+            </div>
+     <!-- Small Screen Compatibility with menu button -->
+               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+               <i class="fa fa-bars"></i>
+          </a>
+          </div>
      </div>
+     <!-- Sidebar on small screens when clicking the menu icon -->
+     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+     <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+     </nav>
+
+     <!-- Social Media -->
+     <div class="w3-display-bottomright w3-text-grey w3-xlarge" style="padding: 70px 30px">
+          <a href="https://www.reddit.com/r/memes/"><i class="fa fa-reddit-square w3-hover-opacity"></i></a>
+          <a href="https://github.com/CodingNguyen/TAMUhack2021"><i class="fa fa-github w3-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+     </div>
+
+     <!-- Header -->
+     <div>
+          <p class= "top">Howdy! It's nice to <i>meme</i> you! Enjoy! </p>
+     </div>
+     
 
      <img src= "Images/0_Img.jpg" id="imageID" alt="some image">
      
-<<<<<<< HEAD
-     <div id="top">
-          <p style="font-size: 15px;">Created by Kara Johnson, Garrett Gill, Cody Nguyen for TAMUHack 2021</p>
-     </div>
-     
-=======
-     <p class="bottom">Created by Kara Johnson, Garrett Gill, Cody Nguyen for TAMUHack 2021</p>
->>>>>>> ca472e46b93dd6d221c125ddd0162c9641a26ec2
+     <p class="bottom" style="font-size: small; position: fixed; bottom: 0px; width: 100%; text-align: left; margin-bottom: auto;"> Special thanks to r/Memes for the content. 
+          <br> All credit to original creators.<br>
+          </p>
+     <p style="font-size: small; position: fixed; bottom: 0px; width: 100%; text-align: right; margin-bottom: auto; background-color: transparent;">
+          Created by Kara Johnson, Garrett Gill, Cody Nguyen for TAMUHack 2021. <br> Check our our social media above @kjohnson8781, @garrettbgill <br>
+     </p>
 </body>
 </html>
