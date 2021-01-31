@@ -1,3 +1,3 @@
 chrome.browserAction.onClicked.addListener(function() {
-    chrome.tabs.create({'url':"chrome:\\newtab"})
+    chrome.tabs.create({"url": "chrome://newtab"})
 })

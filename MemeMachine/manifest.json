@@ -5,13 +5,15 @@
     "manifest_version": 2,
    
     "chrome_url_overrides": {
-        "newtab": "Meme.html"
+        "newtab": "MemePage.html"
     },
-    
+    "browser_action": {
+        "default_icon": "rocket16.png",
+        "default_title": "Click to see Memes!"
+    },
     "permissions":["tabs", "activeTab"],
-    
+
     "background": {
-        "scripts": ["background.js"],
-         "persistent": false
+        "scripts": ["background.js"]
     }
 }
