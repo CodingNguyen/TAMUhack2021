@@ -3,6 +3,6 @@
 
 function getRandomImage(){
     var randomNumber = Math.floor(Math.random() * 10) + 5;
-    var imageName = "img_" + randomNumber;
+    var imageName = "_Img" + randomNumber;
     document.getElementById("imageid").src= "ImagePath" + "/" + imageName
 }
